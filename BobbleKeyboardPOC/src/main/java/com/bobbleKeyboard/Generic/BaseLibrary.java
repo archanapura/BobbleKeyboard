@@ -54,7 +54,7 @@ des.setCapability("appPackage", "com.touchtalent.bobbleapp");
 	System.out.println("Execution started");
 ad=new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"),des);
 Thread.sleep(4000);
-//logger.log(LogStatus.INFO, "Application started ");
+
 	}
 	
 	
