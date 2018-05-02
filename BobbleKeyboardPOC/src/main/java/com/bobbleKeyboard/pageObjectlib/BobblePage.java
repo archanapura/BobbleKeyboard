@@ -83,35 +83,16 @@ public class BobblePage extends BaseLibrary
 
 	public void loginPage() 
 	{
-
-		//if(ad.findElement(By.id(Constantlib.socialKeyboard)).getText().contains("Social Keyboard"))
-		//{
-
-			clickOnButton(.89,.09);
-			//	ad.tap(1,430,77,300);
+	        clickOnButton(.89,.09);
 			logger.log(LogStatus.INFO, "Entered Login page ");
-	/*	}
-		else
-		{
-			System.out.println("Login page is not there");
-		}*/
+	
 	}
 	public void selectBobbleKeyboard() 
 	{
-		/*if(ad.findElement(By.id(Constantlib.bobbleKeyboard)).getText().contains("Change keyboard"))
-		{*/
-			//clickOnButton(.175,.46);
-			/*ad.findElement(By.xpath("//android.widget.Button[contains(@text,'ENABLE BOBBLE')]")).click();
-			ad.findElement(By.xpath("(//android.widget.Switch)[3]")).click();*/
+		
 			ad.findElement(By.xpath("(//android.widget.RadioButton)[2]")).click();
-			//clickOnButton(.175,.46);
-			//ad.tap(1,84,400,300);
 			logger.log(LogStatus.INFO, "selected  Bobble keyboard ");
-	/*	}
-		else
-		{
-			System.out.println("Couldn't select Bobble keyboard");
-		}*/
+
 	}
 
 	public void welcomePage() 
@@ -141,38 +122,20 @@ public class BobblePage extends BaseLibrary
 
 	public void selectTheme() 
 	{
-		//ad.swipe(351,164,162,162,3000);
+		
 		swiping(.73,.192,.33,.189);
 		ad.tap(1, 400,150,300);
-		/*if(ad.findElement(By.xpath(Constantlib.themes)).isDisplayed())
-		{
-			ad.findElement(By.xpath(Constantlib.themes)).click();
-			logger.log(LogStatus.INFO, "Selecting one of keyboard theme ");
 		}
-		else
-		{
-			System.out.println("Theme couldn't be selected");		}}
-*/}
 	public void selectKeyboard() 
 	{
-		/*if(ad.findElement(By.id(Constantlib.keyboard)).isDisplayed())
-		{*/
-
-			//ad.findElement(By.xpath("//android.widget.ImageView[@instance='5']")).click();
+		
 			ad.tap(1,353,429,300);
-	/*	}
-		else
-		{
-			System.out.println("Couldn't add theme");
-		}*/}
+	
+		}
 
 	public void testKeyboard() throws InterruptedException 
 	{
-		/*if(ad.findElement(By.id(Constantlib.textbox)).isDisplayed())
-		{*/
-			/*ad.findElement(By.id("com.touchtalent.bobbleapp:id/keyBordertoggle")).click();
-			ad.findElement(By.id("com.touchtalent.bobbleapp:id/accentedCharcterToggle")).click();
-*/          // ad.tap(1, 67, 402,300);
+		
              ad.tap(1, 213, 596,300);
              Thread.sleep(1000);
              ad.tap(1, 123, 596,300);
@@ -182,46 +145,28 @@ public class BobblePage extends BaseLibrary
              ad.tap(1, 213,596,300);
              Thread.sleep(1000);
 		
-			//ad.findElement(By.id("com.touchtalent.bobbleapp:id/editText")).sendKeys("testing keyboard");
+			
 			logger.log(LogStatus.INFO, "Testing selected theme");
-			ad.hideKeyboard();
-		/*}
-		else
-		{
-			System.out.println("Couldn't test keyboard");}*/}
+		}
 	
 	public void selectLanguageTab() 
 	{
-		/*if(ad.findElement(By.xpath(Constantlib.language)).isDisplayed())
-		{*/
+		
 		ad.tap(1, 400,150,300);
-		//ad.findElement(By.xpath(Constantlib.language)).click();
-		/*}
-		else
-		{
-			System.out.println("Language is not selected");
-		}*/
+		
 	}
 public void addLanguage1() throws InterruptedException {
-	/*if(ad.findElement(By.id(Constantlib.languagePage)).isDisplayed())
-	{*/
+	
 	Thread.sleep(4000);
 	ad.swipe(211,715,211,50,3000);
-	//ad.findElement(By.xpath(Constantlib.selectLanguage)).click();
-
-	//ad.swipe(211,200,211,715,3000);
-/*	}
-	else
-	{
-		System.out.println("Couldn't find language");
-		}*/
+	
 }
 	
 	
 	public void closeApp1() throws InterruptedException
 	{
 		Thread.sleep(3000);
-		//ad.setConnection(Connection.NONE);
+		
 		ad.closeApp();
 	}
 
